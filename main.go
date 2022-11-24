@@ -127,7 +127,7 @@ var movements = map[int]Movement{
 		shift:       [3]Cell{{1, 0}, {1, 1}, {1, 2}},
 		transpose:   NONE,
 		orientation: FRONT,
-		axis:        Y,
+		axis:        X,
 	},
 	3: {
 		shift:       [3]Cell{{0, 2}, {1, 2}, {2, 2}},
@@ -156,6 +156,12 @@ var movements = map[int]Movement{
 	7: {
 		shift:       [3]Cell{{0, 2}, {1, 2}, {2, 2}},
 		transpose:   BACK,
+		orientation: RIGHT,
+		axis:        Y,
+	},
+	8: {
+		shift:       [3]Cell{{0, 2}, {1, 2}, {2, 2}},
+		transpose:   FRONT,
 		orientation: RIGHT,
 		axis:        Y,
 	},
